@@ -7,5 +7,5 @@ Trees:
   BinaryTree 
   
 List:
-  ArrayedList
+  ArrayedList,
   LinkedList
