@@ -251,20 +251,29 @@ public class BinaryTree<I extends Comparable<? super I>>{
     }
 
     // Testing
-    // =======================
     public static void main(String[] args){
         BinaryTree<Integer> tree = new BinaryTree<>();
+        
+        // Testing insert()
         assert(tree != null);
-        tree.insert(12);
-        tree.insert(2);
-        tree.insert(7);
-        tree.insert(10);
-        tree.insert(4);
-        tree.insert(1);
-        tree.insert(6);
-        tree.preOrder();
-        System.out.println("");
+        for (int i = 0; i < 20; i++){
+            tree.insert(i);
+        }
+        // Testing minValue and maxValue
+        assert(tree.minValue() == 0);
+        assert(tree.maxValue() == 19);
+        
+        // Testing itemExists()
+        for (int i = 0, i < 20; i++){
+            assert(tree.itemExists(i);   
+        }
+        
+        // Testing delete
+        tree.delete(5);
         tree.delete(10);
-        tree.preOrder();
+        assert(tree.itemExists(5) == False);
+        assert(tree.itemExists(10) == False);
+                  
+        System.out.println("Tests have passed\n");
     }
 }
