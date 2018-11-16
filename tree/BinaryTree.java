@@ -271,8 +271,8 @@ public class BinaryTree<I extends Comparable<? super I>>{
         // Testing delete
         tree.delete(5);
         tree.delete(10);
-        assert(tree.itemExists(5) == False);
-        assert(tree.itemExists(10) == False);
+        assert(!tree.itemExists(5));
+        assert(!tree.itemExists(10));
                   
         System.out.println("Tests have passed\n");
     }
