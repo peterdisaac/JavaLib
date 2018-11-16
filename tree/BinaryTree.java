@@ -264,8 +264,8 @@ public class BinaryTree<I extends Comparable<? super I>>{
         assert(tree.maxValue() == 19);
         
         // Testing itemExists()
-        for (int i = 0, i < 20; i++){
-            assert(tree.itemExists(i);   
+        for (int i = 0; i < 20; i++){
+            assert(tree.itemExists(i));   
         }
         
         // Testing delete
